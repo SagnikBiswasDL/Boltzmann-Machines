@@ -12,9 +12,10 @@ For a more technical understanding of Boltzmann Machines and how to tune them wi
 This repository includes Java program files simulating a Boltzmann Machine that is capable of learning logic:
 
 ### `IsingModel.java`
-- **Purpose**: This file is key to the learning process of the Boltzmann Machine, simulating how binary neurons (similar to magnetic dipoles in a lattice) adjust and learn through interactions. 
+- **Purpose**: This file manages the learning process of the Boltzmann Machine which is implemented through Contrastive Divergence. 
 ### `Inference.java`
-- **Purpose**: Central to the functioning of the Boltzmann Machine, this file implements the inference mechanism using Gibbs Sampling. It manages the sampling process that updates the network states based on their probability distributions, crucial for both learning and generating new data.
+- **Purpose**: This file manages the state generation phase of the Boltzmann Machine. It handles the sampling process that updates the network states based on their probability distributions. 
+
 
 ### Data Files (`.txt` Files)
 - **Purpose**: These text files contain the necessary data to training the Boltzmann Machine in IsingModel.java
