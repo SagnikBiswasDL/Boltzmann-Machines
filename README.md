@@ -18,5 +18,5 @@ This repository includes Java program files simulating a Boltzmann Machine that 
 
 
 ### Data Files (`.txt` Files)
-- **Purpose**: These text files contain the necessary data to training the Boltzmann Machine in IsingModel.java
+- **Purpose**: These text files contain the necessary data to train the Boltzmann Machine in IsingModel.java
 
