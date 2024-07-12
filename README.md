@@ -7,17 +7,15 @@ Boltzmann Machines are versatile, tackling tasks ranging from image recognition,
 
 For a more technical understanding of Boltzmann Machines and how to tune them with appropriate hardware, please review this paper: https://arxiv.org/pdf/2303.10728 
 
-# Understanding of the Code
+# Understanding The Code
 
-This repository is organized into Java program files and accompanying data files that together implement and utilize a Boltzmann Machine for various tasks. Here’s a breakdown of each file's purpose:
+This repository includes Java program files simulating a Boltzmann Machine that is capable of learning logic:
 
-IsingModel.java: This file simulates the Ising model, which serves as a foundational concept for understanding the behavior of Boltzmann Machines. The simulation covers the dynamics of magnetic dipoles in a lattice, akin to how neurons in a Boltzmann Machine interact based on their binary states.
-Key Functions: Includes routines for setting up the lattice, running the simulation at various temperatures, and visualizing the system's state. This helps demonstrate the energy minimization and equilibrium processes that are central to Gibbs Sampling in Boltzmann Machines.
+### `IsingModel.java`
+- **Purpose**: This file is key to the learning process of the Boltzmann Machine, simulating how binary neurons (similar to magnetic dipoles in a lattice) adjust and learn through interactions. 
+### `Inference.java`
+- **Purpose**: Central to the functioning of the Boltzmann Machine, this file implements the inference mechanism using Gibbs Sampling. It manages the sampling process that updates the network states based on their probability distributions, crucial for both learning and generating new data.
 
-Inference.java: Implements the core functionality of the Boltzmann Machine, focusing on the inference process using Gibbs Sampling. This file is crucial for understanding how the Boltzmann Machine uses learned data distributions to perform tasks such as data generation and pattern recognition.
-Key Functions: Sets up the network architecture with initialized weights and biases, runs the Gibbs Sampling process to update neuron states, and adjusts parameters based on the divergence between sampled and actual data. It also includes methods to generate new data samples that reflect the trained model's understanding of the input data patterns.
-
-Data Files (.txt Files)
-Purpose: These text files contain the data used for training and testing the Boltzmann Machine. The data typically includes binary representations of images or other patterns that the network learns to model.
-Usage: The data files are read by the Java programs at runtime to provide input for training the Boltzmann Machine. This includes both the input data for learning and validation data to test the accuracy of the network's inference capabilities.
+### Data Files (`.txt` Files)
+- **Purpose**: These text files contain the necessary data to training the Boltzmann Machine in IsingModel.java
 
