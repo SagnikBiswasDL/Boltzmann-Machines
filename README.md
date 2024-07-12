@@ -11,12 +11,10 @@ For a more technical understanding of Boltzmann Machines and how to tune them wi
 
 This repository is organized into Java program files and accompanying data files that together implement and utilize a Boltzmann Machine for various tasks. Here’s a breakdown of each file's purpose:
 
-IsingModel.java
-Purpose: This file simulates the Ising model, which serves as a foundational concept for understanding the behavior of Boltzmann Machines. The simulation covers the dynamics of magnetic dipoles in a lattice, akin to how neurons in a Boltzmann Machine interact based on their binary states.
+IsingModel.java: This file simulates the Ising model, which serves as a foundational concept for understanding the behavior of Boltzmann Machines. The simulation covers the dynamics of magnetic dipoles in a lattice, akin to how neurons in a Boltzmann Machine interact based on their binary states.
 Key Functions: Includes routines for setting up the lattice, running the simulation at various temperatures, and visualizing the system's state. This helps demonstrate the energy minimization and equilibrium processes that are central to Gibbs Sampling in Boltzmann Machines.
 
-Inference.java
-Purpose: Implements the core functionality of the Boltzmann Machine, focusing on the inference process using Gibbs Sampling. This file is crucial for understanding how the Boltzmann Machine uses learned data distributions to perform tasks such as data generation and pattern recognition.
+Inference.java: Implements the core functionality of the Boltzmann Machine, focusing on the inference process using Gibbs Sampling. This file is crucial for understanding how the Boltzmann Machine uses learned data distributions to perform tasks such as data generation and pattern recognition.
 Key Functions: Sets up the network architecture with initialized weights and biases, runs the Gibbs Sampling process to update neuron states, and adjusts parameters based on the divergence between sampled and actual data. It also includes methods to generate new data samples that reflect the trained model's understanding of the input data patterns.
 
 Data Files (.txt Files)
