@@ -5,7 +5,7 @@ Boltzmann Machines are stochastic neural networks composed of binary neurons tha
 
 Boltzmann Machines are versatile, tackling tasks ranging from image recognition, where they excel in identifying and classifying visual data, to learning the notorious XOR logic function—a challenge that early neural networks struggled to overcome. Their capabilities extend into generative modeling, where they shine in creating new data instances that are statistically coherent with the original training data, demonstrating their robustness in both discriminative and generative tasks.
 
-For a more technical understanding of Boltzmann Machines and how to properly train them with appropriate hardware, please review this paper: https://arxiv.org/pdf/2303.10728 
+For a more technical understanding of Boltzmann Machines and how to tune them with appropriate hardware, please review this paper: https://arxiv.org/pdf/2303.10728 
 
 # Understanding of the Code
 
